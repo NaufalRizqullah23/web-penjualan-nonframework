@@ -30,11 +30,6 @@
                         <th>Tanggal Pembelian</th>
                     </tr>
                     <?php
-                        // while($user_data = mysqli_fetch_array($result)) {         
-                            // echo "<tr>";
-                            // echo "<td>".$user_data['id_barang']."</td>";
-                            // echo "<td>".$user_data['nama_barang']."</td>";
-                            // echo "<td>".$user_data['harga_barang']."</td>"; 
                             while($user_data = mysqli_fetch_array($result)){
                                 echo "<tr>";
                                 $dummy = $user_data['id_barang'];
@@ -54,12 +49,6 @@
                     ?>
                 </table>
             </center>
-                
-                <div class="mt3">
-                    <!-- if(session('tampil'))
-           {{session('tampil')}}
-                endif -->
-                </div>
                 <center><table>
                     <tr>
                         <th>
